@@ -3,6 +3,7 @@ var buddyStrings = function(A, B) {
   if (A === B) {
     const setA = new Set([...A]);
     return A.length === setA.size ? false : true;
+    
   }
 
   const ix = [];

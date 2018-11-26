@@ -16,7 +16,7 @@ const splitListToParts = (head, k) => {
     chunk = Math.ceil(length / k);
     rest = length % k || null;
   }
-
+  
   let j = 1;
   let current = { ...head };
   let list = new ListNode(current.val);
@@ -39,7 +39,7 @@ const splitListToParts = (head, k) => {
       j = 1;
     }
   }
-
+  
   results.push(list);
 
   const output =
@@ -94,7 +94,7 @@ const t = {
   }
 };
 
-console.log(splitListToParts([], 3));
+console.log(splitListToParts({}, 3));
 console.log(splitListToParts(t, 3));
 console.log(splitListToParts(t, 4));
 console.log(splitListToParts(t, 5));

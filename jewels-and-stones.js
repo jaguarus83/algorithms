@@ -3,5 +3,4 @@ var numJewelsInStones = function(J, S) {
   const matches = S.match(regex);
   return matches ? matches.length : 0;
 };
-
 console.log(numJewelsInStones('aA', 'aAAbbbb'));
